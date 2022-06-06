@@ -28,13 +28,15 @@ export default function App() {
 					style={styles.textInput}
 					onChangeText={goalInputHandler}
 				/>
-				<Button title='Add Goal' onPress={addGoalHandler} />
+				<Button title='Add Goal' onPress={addGoalHandler} color={'#a76bcf'} />
 			</View>
-
+      <View style={styles.goalTitleContainer}>
+        <Text style={styles.goalTitle}>Your Goals</Text>
+      </View>
 			{/* Store The List of Goals here */}
-			<View style={styles.goalContainer}>
+      <View style={styles.goalContainer}>
         {userGoals.map((goal) => 
-          <Text key={goal}>{ goal }</Text>
+          <Text key={goal} style={styles.goalItem}>{ goal }</Text>
         )}
 			</View>
 		</View>
@@ -63,8 +65,26 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 		marginRight: 5,
 		padding: 5,
-	},
+  },
+  goalTitleContainer: {
+    // flex: 1,
+    marginBottom: 10,
+  },
+  goalTitle: {
+    fontSize: 30,
+    color: '#a76bcf',
+    textAlign: 'left',
+    fontWeight: 'bold',
+  },
 	goalContainer: {
-		flex: 5,
-	},
+		flex: 4,
+  },
+  goalItem: {
+    fontSize: 20,
+    backgroundColor: '#a76bcf',
+    padding: 10,
+    marginBottom: 10,
+    color: '#fff',
+    
+  }
 })
