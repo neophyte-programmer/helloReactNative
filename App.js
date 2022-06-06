@@ -5,13 +5,13 @@ export default function App() {
     // Stores the different content of the app
     <View style={styles.appContainer}>
       {/* Add The Goals Here */}
-      <View style={styles.addGoalContainer}>
+      <View style={styles.inputContainer}>
         <TextInput placeholder='Enter your goal!' style={styles.textInput} />
         <Button title='Add Goal' />
       </View>
 
       {/* Store The List of Goals here */}
-      <View>
+      <View style={styles.goalContainer}>
         <Text>Goals</Text>
       </View>
       
@@ -21,18 +21,28 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    margin: 50,
+    flex: 1,
+    marginTop: 50,
+    paddingHorizontal: 16,
   },
-  addGoalContainer: {
+  inputContainer: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 24,
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
   },
   textInput: {
-    width: '80%',
+    width: '70%',
     borderColor: '#ccc',
     borderWidth: 1,
     borderRadius: 5,
     marginRight: 5,
     padding: 5,
+  },
+  goalContainer: {
+    flex: 5,
   },
 })
