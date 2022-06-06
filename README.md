@@ -1,5 +1,9 @@
 # Hello React Native
-This is a simple React Native app. I am using it to learn React Native. 
+This is a simple React Native app that helps a user track goals. I am using it to learn React Native. 
+
+## Features
+- Add a goal
+- Tap a goal to remove it
 
 ## About React Native & Expo
 ### React Native
@@ -17,6 +21,24 @@ Expo is a powerful environment for React Native which helps you from creation to
 - I initialized the project using the command:
 ``` expo init helloReactNative ```
 - I installed Expo Go on my phone and scanned the QR code to preview the app.   
+
+## React Native Basics | Core Concepts
+
+### Using React Native Components & Building Uis
+Basic React Native Components:
+- `View` - A container that can contain other components.
+- `Text` - displays text
+- `Image` - displays an image
+- `TextInput` - allows user to enter text via keyboard
+- `ScrollView` - allows user to scroll through content
+- `StyleSheet` - allows you to create your own styles similar to CSS
+  
+
+### Styling React Native Apps
+Unlike React, react Native does use CSS as the application is not a browser however it is still possible to style your app by using
+inline styles or stylesheet objects written in JavaScript.
+
+### Adding Interactivity & Managing States
 
 ## References and Resources
 - [React Native](https://reactnative.dev/docs/)
