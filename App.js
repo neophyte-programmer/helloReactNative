@@ -51,9 +51,7 @@ export default function App() {
 					
 					// Returns the goal
 					return(
-						<View style = { styles.goalItem } >
-							<Text style = { styles.goalText }>{itemData.item.text}</Text>
-						</View>
+						
 					)
 
 				} }/>
